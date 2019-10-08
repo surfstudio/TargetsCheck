@@ -1,0 +1,20 @@
+xcassets:
+  inputs:
+    - TargetsCheck/Resources/Images/Assets.xcassets
+  outputs:
+    - templateName: swift4
+      output: TargetsCheck/Resources/Images/Assets.swift
+
+fonts:
+  inputs:
+    - TargetsCheck/Resources/Fonts/
+  outputs:
+    - templateName: swift4
+      output: TargetsCheck/Resources/Fonts/Fonts.swift
+
+strings:
+  inputs:
+    - TargetsCheck/Resources/Strings/Localizable.strings
+  outputs:
+    - templateName: structured-swift4
+      output: TargetsCheck/Resources/Strings/Strings.swift
