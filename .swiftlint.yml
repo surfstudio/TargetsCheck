@@ -125,7 +125,7 @@ custom_rules:
         message: "Every MARK should be surrounded with 1 newline before and 1 after it"
         severity: warning
 
-line_length: 120
+line_length: 160
 
 file_length:
     warning: 500

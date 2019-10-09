@@ -28,3 +28,7 @@ end
 target 'TargetsCheck' do
     common_pods
 end
+
+target 'TargetsCheck Debug' do
+    common_pods
+end
