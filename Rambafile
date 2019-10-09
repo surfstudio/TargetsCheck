@@ -7,7 +7,7 @@ xcodeproj_path: TargetsCheck.xcodeproj
 
 ### Code generation settings section
 # The main project target name
-project_target: TargetsCheck
+project_targets: [TargetsCheck, TargetsCheck Debug]
 
 # The file path for new modules
 project_file_path: TargetsCheck/Flows
