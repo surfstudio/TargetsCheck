@@ -1,2 +1,4 @@
 Pods_TargetsCheck.framework
 Pods_TargetsCheck_Debug.framework
+/TargetsCheck/Application/Release/BaseConstants.swift
+/TargetsCheck/Application/Debug/BaseConstants.swift

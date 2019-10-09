@@ -68,6 +68,8 @@
 		90F0FE59234E395700E6E46B /* ci in Resources */ = {isa = PBXBuildFile; fileRef = 90CEA966234CF92B00F27354 /* ci */; };
 		90F0FE5A234E395700E6E46B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90CEA98E234CF92B00F27354 /* Assets.xcassets */; };
 		90F0FE5B234E395700E6E46B /* fastlane in Resources */ = {isa = PBXBuildFile; fileRef = 90CEA964234CF92B00F27354 /* fastlane */; };
+		90F0FE6A234E477F00E6E46B /* BaseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F0FE68234E477700E6E46B /* BaseConstants.swift */; };
+		90F0FE6C234E478600E6E46B /* BaseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F0FE6B234E478600E6E46B /* BaseConstants.swift */; };
 		BBB7E074C2447C76E22D89D8 /* MainCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382F08EC413DA885C8F12E51 /* MainCoordinatorOutput.swift */; };
 		C5F5DDD03AD143C591DE4F44 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44B595A7F717DB37D1334D8 /* MainViewController.swift */; };
 		CC04F12E8BE9A1EF05093A89 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44B595A7F717DB37D1334D8 /* MainViewController.swift */; };
@@ -144,6 +146,8 @@
 		90F0FE60234E395700E6E46B /* TargetsCheck Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TargetsCheck Debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F0FE64234E3A2A00E6E46B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90F0FE65234E3A3400E6E46B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90F0FE68234E477700E6E46B /* BaseConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseConstants.swift; sourceTree = "<group>"; };
+		90F0FE6B234E478600E6E46B /* BaseConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseConstants.swift; sourceTree = "<group>"; };
 		A35DA29D406A8CB725FC105C /* MainModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainModuleInput.swift; sourceTree = "<group>"; };
 		A6BE1C4BF6A61E074D8D3539 /* Pods-TargetsCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TargetsCheck.debug.xcconfig"; path = "Target Support Files/Pods-TargetsCheck/Pods-TargetsCheck.debug.xcconfig"; sourceTree = "<group>"; };
 		A6E5271387E79E88BB0533F2 /* Pods_TargetsCheck_Debug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TargetsCheck_Debug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -526,6 +530,7 @@
 			isa = PBXGroup;
 			children = (
 				90F0FE64234E3A2A00E6E46B /* Info.plist */,
+				90F0FE68234E477700E6E46B /* BaseConstants.swift */,
 			);
 			path = Debug;
 			sourceTree = "<group>";
@@ -534,6 +539,7 @@
 			isa = PBXGroup;
 			children = (
 				90F0FE65234E3A3400E6E46B /* Info.plist */,
+				90F0FE6B234E478600E6E46B /* BaseConstants.swift */,
 			);
 			path = Release;
 			sourceTree = "<group>";
@@ -926,6 +932,7 @@
 				647B5646237DD27F8A869990 /* MainCoordinatorOutput.swift in Sources */,
 				1277EB64A4E094174DC1F230 /* MainModuleConfigurator.swift in Sources */,
 				731975FDFBF95091FE565884 /* MainPresenter.swift in Sources */,
+				90F0FE6C234E478600E6E46B /* BaseConstants.swift in Sources */,
 				0487F5982C1ED90467CF5C5C /* MainModuleInput.swift in Sources */,
 				E3A22B501F9987A34041D5E0 /* MainModuleOutput.swift in Sources */,
 				C5F5DDD03AD143C591DE4F44 /* MainViewController.swift in Sources */,
@@ -964,6 +971,7 @@
 				BBB7E074C2447C76E22D89D8 /* MainCoordinatorOutput.swift in Sources */,
 				4B9414BC3C3F0F24DCDD52E3 /* MainModuleConfigurator.swift in Sources */,
 				543BEB650A910541A63FBA1B /* MainPresenter.swift in Sources */,
+				90F0FE6A234E477F00E6E46B /* BaseConstants.swift in Sources */,
 				27BCEAE192F779E221A5AA90 /* MainModuleInput.swift in Sources */,
 				F97BE6509ED4F0A0BC42E2A3 /* MainModuleOutput.swift in Sources */,
 				CC04F12E8BE9A1EF05093A89 /* MainViewController.swift in Sources */,
