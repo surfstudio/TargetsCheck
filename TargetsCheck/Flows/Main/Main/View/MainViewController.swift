@@ -28,6 +28,7 @@ final class MainViewController: UIViewController {
 extension MainViewController: MainViewInput {
 
     func setupInitialState() {
+        TestModuleExample().test()
     }
 
 }
