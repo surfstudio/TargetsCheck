@@ -582,6 +582,7 @@
 				90CEA95B234CF92B00F27354 /* Frameworks */,
 				90CEA95C234CF92B00F27354 /* Resources */,
 				66DAD1D738186ED5B6E2D0A1 /* [CP] Embed Pods Frameworks */,
+				90F0FE66234E46E900E6E46B /* Targets Files Comparasion */,
 			);
 			buildRules = (
 			);
@@ -621,6 +622,7 @@
 				90F0FE50234E395700E6E46B /* Frameworks */,
 				90F0FE52234E395700E6E46B /* Resources */,
 				90F0FE5C234E395700E6E46B /* [CP] Embed Pods Frameworks */,
+				90F0FE67234E470000E6E46B /* Targets Files Comparasion */,
 			);
 			buildRules = (
 			);
@@ -664,8 +666,8 @@
 			projectRoot = "";
 			targets = (
 				90CEA95F234CF92B00F27354 /* TargetsCheck */,
-				90CEA9BB234CF92B00F27354 /* TargetsCheckTests */,
 				90F0FE3F234E395700E6E46B /* TargetsCheck Debug */,
+				90CEA9BB234CF92B00F27354 /* TargetsCheckTests */,
 			);
 		};
 /* End PBXProject section */
@@ -864,6 +866,42 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TargetsCheck Debug/Pods-TargetsCheck Debug-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		90F0FE66234E46E900E6E46B /* Targets Files Comparasion */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Targets Files Comparasion";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make targets_check\n";
+		};
+		90F0FE67234E470000E6E46B /* Targets Files Comparasion */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Targets Files Comparasion";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make targets_check\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
