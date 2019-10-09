@@ -68,7 +68,12 @@
 		90F0FE59234E395700E6E46B /* ci in Resources */ = {isa = PBXBuildFile; fileRef = 90CEA966234CF92B00F27354 /* ci */; };
 		90F0FE5A234E395700E6E46B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90CEA98E234CF92B00F27354 /* Assets.xcassets */; };
 		90F0FE5B234E395700E6E46B /* fastlane in Resources */ = {isa = PBXBuildFile; fileRef = 90CEA964234CF92B00F27354 /* fastlane */; };
-		AB907D3491AC0F528F2A3B6E /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		90F0FE6A234E477F00E6E46B /* BaseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F0FE68234E477700E6E46B /* BaseConstants.swift */; };
+		90F0FE6C234E478600E6E46B /* BaseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F0FE6B234E478600E6E46B /* BaseConstants.swift */; };
+		90F0FE98234E4B5200E6E46B /* TestModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F0FE96234E4A4600E6E46B /* TestModule.framework */; };
+		90F0FE99234E4B5200E6E46B /* TestModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90F0FE96234E4A4600E6E46B /* TestModule.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		90F0FE9B234E4B5B00E6E46B /* TestModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F0FE94234E4A4200E6E46B /* TestModule.framework */; };
+		90F0FE9C234E4B5B00E6E46B /* TestModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90F0FE94234E4A4200E6E46B /* TestModule.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BBB7E074C2447C76E22D89D8 /* MainCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382F08EC413DA885C8F12E51 /* MainCoordinatorOutput.swift */; };
 		C5F5DDD03AD143C591DE4F44 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44B595A7F717DB37D1334D8 /* MainViewController.swift */; };
 		CC04F12E8BE9A1EF05093A89 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44B595A7F717DB37D1334D8 /* MainViewController.swift */; };
@@ -86,6 +91,31 @@
 			remoteInfo = TargetsCheck;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		90F0FE9A234E4B5200E6E46B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				90F0FE99234E4B5200E6E46B /* TestModule.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90F0FE9D234E4B5B00E6E46B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				90F0FE9C234E4B5B00E6E46B /* TestModule.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		06AE130D46C80F8A635A6DC4 /* MainCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
@@ -145,6 +175,11 @@
 		90F0FE60234E395700E6E46B /* TargetsCheck Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TargetsCheck Debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F0FE64234E3A2A00E6E46B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90F0FE65234E3A3400E6E46B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90F0FE68234E477700E6E46B /* BaseConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseConstants.swift; sourceTree = "<group>"; };
+		90F0FE6B234E478600E6E46B /* BaseConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseConstants.swift; sourceTree = "<group>"; };
+		90F0FE91234E48C500E6E46B /* TargetsCheck-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TargetsCheck-Bridging-Header.h"; sourceTree = "<group>"; };
+		90F0FE94234E4A4200E6E46B /* TestModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TestModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90F0FE96234E4A4600E6E46B /* TestModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TestModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35DA29D406A8CB725FC105C /* MainModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainModuleInput.swift; sourceTree = "<group>"; };
 		A6BE1C4BF6A61E074D8D3539 /* Pods-TargetsCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TargetsCheck.debug.xcconfig"; path = "Target Support Files/Pods-TargetsCheck/Pods-TargetsCheck.debug.xcconfig"; sourceTree = "<group>"; };
 		A6E5271387E79E88BB0533F2 /* Pods_TargetsCheck_Debug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TargetsCheck_Debug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,7 +197,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB907D3491AC0F528F2A3B6E /* (null) in Frameworks */,
+				90F0FE9B234E4B5B00E6E46B /* TestModule.framework in Frameworks */,
 				1192DADFE0F3B56ECD1DF73F /* Pods_TargetsCheck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,6 +213,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F0FE98234E4B5200E6E46B /* TestModule.framework in Frameworks */,
 				5FD3C65337805C3F31AB686C /* Pods_TargetsCheck_Debug.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,6 +232,8 @@
 		198E5B6F54125AE444CECAFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				90F0FE96234E4A4600E6E46B /* TestModule.framework */,
+				90F0FE94234E4A4200E6E46B /* TestModule.framework */,
 				A6E5271387E79E88BB0533F2 /* Pods_TargetsCheck_Debug.framework */,
 				E07434B2539BDD204230E191 /* Pods_TargetsCheck.framework */,
 			);
@@ -475,6 +513,7 @@
 				90CEA990234CF92B00F27354 /* AppDelegate.swift */,
 				90CEA9B3234CF92B00F27354 /* DeepLinkOption.swift */,
 				90CEA98C234CF92B00F27354 /* LaunchScreen.xib */,
+				90F0FE91234E48C500E6E46B /* TargetsCheck-Bridging-Header.h */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -528,6 +567,7 @@
 			isa = PBXGroup;
 			children = (
 				90F0FE64234E3A2A00E6E46B /* Info.plist */,
+				90F0FE68234E477700E6E46B /* BaseConstants.swift */,
 			);
 			path = Debug;
 			sourceTree = "<group>";
@@ -536,6 +576,7 @@
 			isa = PBXGroup;
 			children = (
 				90F0FE65234E3A3400E6E46B /* Info.plist */,
+				90F0FE6B234E478600E6E46B /* BaseConstants.swift */,
 			);
 			path = Release;
 			sourceTree = "<group>";
@@ -584,6 +625,8 @@
 				90CEA95B234CF92B00F27354 /* Frameworks */,
 				90CEA95C234CF92B00F27354 /* Resources */,
 				66DAD1D738186ED5B6E2D0A1 /* [CP] Embed Pods Frameworks */,
+				90F0FE66234E46E900E6E46B /* Targets Files Comparasion */,
+				90F0FE9D234E4B5B00E6E46B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -623,6 +666,8 @@
 				90F0FE50234E395700E6E46B /* Frameworks */,
 				90F0FE52234E395700E6E46B /* Resources */,
 				90F0FE5C234E395700E6E46B /* [CP] Embed Pods Frameworks */,
+				90F0FE67234E470000E6E46B /* Targets Files Comparasion */,
+				90F0FE9A234E4B5200E6E46B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -666,8 +711,8 @@
 			projectRoot = "";
 			targets = (
 				90CEA95F234CF92B00F27354 /* TargetsCheck */,
-				90CEA9BB234CF92B00F27354 /* TargetsCheckTests */,
 				90F0FE3F234E395700E6E46B /* TargetsCheck Debug */,
+				90CEA9BB234CF92B00F27354 /* TargetsCheckTests */,
 			);
 		};
 /* End PBXProject section */
@@ -867,6 +912,42 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TargetsCheck Debug/Pods-TargetsCheck Debug-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		90F0FE66234E46E900E6E46B /* Targets Files Comparasion */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Targets Files Comparasion";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make targets_check\n";
+		};
+		90F0FE67234E470000E6E46B /* Targets Files Comparasion */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Targets Files Comparasion";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make targets_check\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -890,6 +971,7 @@
 				647B5646237DD27F8A869990 /* MainCoordinatorOutput.swift in Sources */,
 				1277EB64A4E094174DC1F230 /* MainModuleConfigurator.swift in Sources */,
 				731975FDFBF95091FE565884 /* MainPresenter.swift in Sources */,
+				90F0FE6C234E478600E6E46B /* BaseConstants.swift in Sources */,
 				0487F5982C1ED90467CF5C5C /* MainModuleInput.swift in Sources */,
 				E3A22B501F9987A34041D5E0 /* MainModuleOutput.swift in Sources */,
 				C5F5DDD03AD143C591DE4F44 /* MainViewController.swift in Sources */,
@@ -928,6 +1010,7 @@
 				BBB7E074C2447C76E22D89D8 /* MainCoordinatorOutput.swift in Sources */,
 				4B9414BC3C3F0F24DCDD52E3 /* MainModuleConfigurator.swift in Sources */,
 				543BEB650A910541A63FBA1B /* MainPresenter.swift in Sources */,
+				90F0FE6A234E477F00E6E46B /* BaseConstants.swift in Sources */,
 				27BCEAE192F779E221A5AA90 /* MainModuleInput.swift in Sources */,
 				F97BE6509ED4F0A0BC42E2A3 /* MainModuleOutput.swift in Sources */,
 				CC04F12E8BE9A1EF05093A89 /* MainViewController.swift in Sources */,
@@ -997,12 +1080,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1052,11 +1136,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1078,6 +1163,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.surfstudio.TargetsCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TargetsCheck/Application/TargetsCheck-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1098,6 +1184,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.surfstudio.TargetsCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TargetsCheck/Application/TargetsCheck-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1160,6 +1247,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.surfstudio.TargetsCheck.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TargetsCheck/Application/TargetsCheck-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1180,6 +1268,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.surfstudio.TargetsCheck.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TargetsCheck/Application/TargetsCheck-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

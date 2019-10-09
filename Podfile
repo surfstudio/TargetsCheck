@@ -2,6 +2,7 @@ platform :ios, '10.0'
 
 use_frameworks!
 inhibit_all_warnings!
+workspace 'TargetsCheck'
 
 def utils
     pod 'SwiftGen', '~> 6.1.0'
@@ -30,5 +31,10 @@ target 'TargetsCheck' do
 end
 
 target 'TargetsCheck Debug' do
+    common_pods
+end
+
+target 'TestModule' do
+    project 'TestModule/TestModule'
     common_pods
 end

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:TestModule/TestModule.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:TargetsCheck.xcodeproj">
    </FileRef>
    <FileRef

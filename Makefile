@@ -45,10 +45,15 @@ format:
 ## Run SwiftLint check
 lint:
 	./Pods/SwiftLint/swiftlint lint --config .swiftlint.yml
+	make targets_check
 
 ## Execute pod install command
 pod:
 	-bundle exec pod install
+
+## File connection comparisons into project targets
+targets_check:
+	bundle exec ruby ./scripts/sourcesComparing.rb  "./TargetsCheck.xcodeproj" "TargetsCheck" "TargetsCheck Debug"
 
 ## Default configuration for beta command
 config ?= debug
