@@ -1,15 +1,15 @@
 require 'xcodeproj'
 
-def compareTargetsSources(project_path, compared_targets)
+def compare_targets_sources(project_path, compared_targets)
 	project = Xcodeproj::Project.open(project_path)
-	whitelist_sources = readWhitelistSources()
+	whitelist_sources = read_whitelist_sources()
 	if !whitelist_sources.empty?
 		puts "🙈 There are files that will not be scanned:"
 		puts whitelist_sources
 	end
 
-	compile_sources_files = targetsCompileSourcesFiles(project, compared_targets)
-	compile_sources_is_valid, invalid_sources = compareFiles(project, compile_sources_files, whitelist_sources)
+	compile_sources_files = targets_compile_sources_files(project, compared_targets)
+	compile_sources_is_valid, invalid_sources = compare_files(project, compile_sources_files, whitelist_sources)
 	if compile_sources_is_valid
 		puts "🦄 All fine with compile sources..."
 	else
@@ -17,8 +17,8 @@ def compareTargetsSources(project_path, compared_targets)
 		puts invalid_sources
 	end
 
-	bundle_resources_files = targetsBundleResourcesFiles(project, compared_targets)
-	bundle_resources_is_valid, invalid_resources = compareFiles(project, bundle_resources_files, whitelist_sources)
+	bundle_resources_files = targets_bundle_resources_files(project, compared_targets)
+	bundle_resources_is_valid, invalid_resources = compare_files(project, bundle_resources_files, whitelist_sources)
 	if bundle_resources_is_valid
 		puts "🦄 All fine with bundle resources..."
 	else
@@ -26,8 +26,8 @@ def compareTargetsSources(project_path, compared_targets)
 		puts invalid_resources
 	end
 
-	frameworks_files = frameworks(project, compared_targets)
-	frameworks_is_valid, invalid_frameworks = compareFrameworks(project, frameworks_files, whitelist_sources)
+	frameworks_files = targets_frameworks(project, compared_targets)
+	frameworks_is_valid, invalid_frameworks = compare_frameworks(project, frameworks_files, whitelist_sources)
 	if frameworks_is_valid
 		puts "🦄 All fine with frameworks..."
 	else
@@ -44,7 +44,7 @@ def compareTargetsSources(project_path, compared_targets)
 	end
 end
 
-def targetsCompileSourcesFiles(project, compared_targets)
+def targets_compile_sources_files(project, compared_targets)
 	targets = project.targets
 	targets_files = Array.new
 	targets.each do |target|
@@ -56,7 +56,7 @@ def targetsCompileSourcesFiles(project, compared_targets)
 	return targets_files
 end
 
-def targetsBundleResourcesFiles(project, compared_targets)
+def targets_bundle_resources_files(project, compared_targets)
 	targets = project.targets
 	targets_files = Array.new
 	targets.each do |target|
@@ -68,7 +68,7 @@ def targetsBundleResourcesFiles(project, compared_targets)
 	return targets_files
 end
 
-def frameworks(project, compared_targets)
+def targets_frameworks(project, compared_targets)
 	targets = project.targets
 	frameworks = Array.new
 	targets.each do |target|
@@ -81,7 +81,7 @@ def frameworks(project, compared_targets)
 end
 
 
-def compareFiles(project, targets_files, whitelist)
+def compare_files(project, targets_files, whitelist)
 	problem_files_paths = Array.new
 	targets_files.each do |files|
 		targets_files.each do |compared_files|
@@ -103,7 +103,7 @@ def compareFiles(project, targets_files, whitelist)
 	end
 end
 
-def compareFrameworks(project, frameworks_files, whitelist)
+def compare_frameworks(project, frameworks_files, whitelist)
 	problem_frameworks_names = Array.new
 	frameworks_files.each do |frameworks|
 		frameworks_files.each do |compared_frameworks|
@@ -125,7 +125,7 @@ def compareFrameworks(project, frameworks_files, whitelist)
 	end
 end
 
-def readWhitelistSources()
+def read_whitelist_sources()
 	whitelist_path = File.join(__dir__, 'sourceComparingWhitelist.txt')
 	return File.read(whitelist_path).split
 end
@@ -133,7 +133,7 @@ end
 if ARGV.count >= 3
 	project_path = ARGV[0]
 	targets = ARGV.drop(1)
-	compareTargetsSources(project_path, targets)
+	compare_targets_sources(project_path, targets)
 else
     puts "🛑 Error: invalid arguments"
     raise "Invalid arguments error"

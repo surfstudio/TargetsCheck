@@ -1,0 +1,2 @@
+Pods_TargetsCheck.framework
+Pods_TargetsCheck_Debug.framework
