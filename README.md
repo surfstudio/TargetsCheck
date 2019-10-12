@@ -24,6 +24,10 @@
 
 2. Добавить новую Build Phase (конечно, в оба таргета):
 
+<p align="center">
+	<img src="./Pistures/buildPhase.png" />
+</p>
+
 Необходимо вызывать непосредственно скрипт:
 
 `ruby ./scripts/sourcesComparing.rb  "./TargetsCheck.xcodeproj" "TargetsCheck" "TargetsCheck Debug"`
@@ -46,7 +50,15 @@
 
 Если вы, к примеру, забыли прикрепить файл DeepLinkOption.h и модуль TestModule ко второму таргету, то получите следующее сообщение об ошибке:
 
+<p align="center">
+	<img src="./Pistures/fail.png" />
+</p>
+
 В случае успеха - вас ждет единорожек:
+
+<p align="center">
+	<img src="./Pistures/success.png" />
+</p>
 
 ## Настройка окружения и запуск тестового проекта
 
